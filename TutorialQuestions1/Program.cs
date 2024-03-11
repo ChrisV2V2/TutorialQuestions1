@@ -7,6 +7,7 @@ namespace TutorialQuestions1
     {
         static void Main(string[] args)
         {
+            //1. Write a C# console application that prompts the user to enter their name and age. Validate the input and store them in variables using implicit variable declaration (var).
             Console.WriteLine("Enter your name: ");
             var name = Console.ReadLine();
 
@@ -28,11 +29,13 @@ namespace TutorialQuestions1
                 Console.WriteLine("Valid name: Name does not contain numbers or special characters.");
             }
 
+            //2.Develop a C# program that calculates the average grade for a set of students. Create a collection of grades (e.g., array, list) and use implicit variable declaration (var) for iteration and calculation.
             int [] grade = {10, 45, 60, 98, 69, 72, 99};
             var avg = Queryable.Average(grade.AsQueryable());//Using the linq Avergae Method.
             avg = Math.Round(avg, 2);
             Console.WriteLine("Class average is: " + avg);
 
+            //3.Instructions: Write a C# program to generate the Fibonacci sequence up to a specified number of terms. Store the sequence in a collection and utilize implicit variable declaration (var) where appropriate.
             long a = 0, b = 1, c = 0;
             Console.WriteLine("Enter the number of terms you would like to reach: ");
             int iterations  = int.Parse(Console.ReadLine());
@@ -47,6 +50,7 @@ namespace TutorialQuestions1
                 b = c;
             }
 
+            //4.Create a C# program that takes a string input from the user, performs string manipulation operations (e.g., reversing, converting case), and displays the result. Use implicit variable declaration (var) for string variables.
             Console.WriteLine("Enter a string for manipulation: ");
 
             var inputString = Console.ReadLine();
@@ -80,6 +84,7 @@ namespace TutorialQuestions1
                 return reversedString;
             }
 
+            //5.Develop a C# program that sorts a list of numbers in ascending order. Utilize implicit variable declaration (var) when declaring variables to store sorted results or during sorting algorithm implementations.
             // Define an array of unsorted numbers
             int [] numbers = { 5, 2, 9, 1, 7 };
 
